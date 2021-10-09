@@ -13,49 +13,53 @@ function Navbar() {
           // justifyContent: "space-between",
         }}
       >
-        <button style={{ width: "120px", height: "30px" }}>
-          <Link
-            style={{
-              color: "black",
-              fontSize: "20px",
-              textDecoration: "none",
-            }}
-            to="/"
-          >
-            Home
-          </Link>
-        </button>
-        <button
+        <Link
           style={{
-            marginLeft: "20px",
-            marginRight: "20px",
-            width: "120px",
-            height: "30px",
+            color: "black",
+
+            textDecoration: "none",
           }}
+          to="/"
         >
-          <Link
+          <button style={{ width: "120px", height: "30px", fontSize: "20px" }}>
+            {" "}
+            Home
+          </button>
+        </Link>
+
+        <Link
+          style={{
+            color: "black",
+
+            textDecoration: "none",
+          }}
+          to="/portfolio"
+        >
+          <button
             style={{
-              color: "black",
               fontSize: "20px",
-              textDecoration: "none",
+              marginLeft: "20px",
+              marginRight: "20px",
+              width: "120px",
+              height: "30px",
             }}
-            to="/portfolio"
           >
             Portfolio
-          </Link>
-        </button>
-        <button style={{ width: "120px", height: "30px" }}>
-          <Link
-            style={{
-              color: "black",
-              fontSize: "20px",
-              textDecoration: "none",
-            }}
-            to="/about"
-          >
-            About Us
-          </Link>
-        </button>
+          </button>
+        </Link>
+
+        <Link
+          style={{
+            color: "black",
+
+            textDecoration: "none",
+          }}
+          to="/about"
+        >
+          <button style={{ width: "120px", height: "30px", fontSize: "20px" }}>
+            About Us{" "}
+          </button>
+        </Link>
       </div>
     </div>
   );
