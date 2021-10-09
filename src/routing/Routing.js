@@ -7,6 +7,11 @@ import Footer from "./pageList/Footer";
 import Home from "./pageList/Home";
 import Portfolio from "./pageList/Portfolio";
 import About from "./pageList/About";
+// nested route
+import MobileApp from "./pageList/appPortolio/MobileApp";
+import WebApp from "./pageList/appPortolio/WebApp";
+
+// start main fun
 
 function Routing() {
   return (
@@ -22,6 +27,12 @@ function Routing() {
         </Route>
         <Route exact path="/about">
           <About />
+        </Route>
+        <Route exact path="/mobile">
+          <MobileApp />
+        </Route>
+        <Route exact path="/web">
+          <WebApp />
         </Route>
       </Switch>
       <Navbar />
