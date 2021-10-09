@@ -3,13 +3,15 @@ import "./App.css";
 
 // import files
 import UseStatePractice from "./useStatePractice/UseStatePractice";
+import Routing from "./routing/Routing";
 
 // start app function
 
 function App() {
   return (
-    <div>
-      <UseStatePractice />
+    <div style={{ backgroundColor: "#cacaca", height: "100vh" }}>
+      <Routing />
+      {/* <UseStatePractice /> */}
     </div>
   );
 }
