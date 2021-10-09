@@ -9,7 +9,9 @@ function StudentList({ students, index, dltHandler, updateHandler }) {
       <td>{students.studClass}</td>
       <td>
         <button onClick={() => dltHandler(students.id)}>Delete-Row</button>
-        <button onClick={() => updateHandler(students)}>Udate Data</button>
+        <button onClick={() => updateHandler(students, index)}>
+          Udate Data
+        </button>
       </td>
     </tr>
   );
